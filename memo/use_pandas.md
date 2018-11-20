@@ -58,3 +58,24 @@ pd.concat = (
      axis=1
      )
 ```
+
+## キーで結合
+```python
+pd.merge(data1, data2, left_on='KEY', right_on='KEY')
+```
+
+## 特定の行の抜き出し
+data.columnに'sample'が入っている行だけ抜き出す
+```python
+data[data.column == 'sample']
+```
+
+## カラムの順番を入れ替える
+```python
+data.ix[:,[1,3,2]]
+```
+
+## ヒストグラムのプロット
+```python
+data.col.plot.hist()
+```
