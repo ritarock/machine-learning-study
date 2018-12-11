@@ -77,5 +77,5 @@ data.ix[:,[1,3,2]]
 
 ## ヒストグラムのプロット
 ```python
-data.col.plot.hist()
+data.col.plot.hist(bins=100)
 ```
