@@ -79,3 +79,30 @@ data.ix[:,[1,3,2]]
 ```python
 data.col.plot.hist(bins=100)
 ```
+
+## 基本的な統計量の出力
+```python
+data.col.describe()
+```
+
+### 出力される項目の詳細
+* count
+データ数
+* mean
+平均
+* std
+標準偏差  
+データのばらつきを指標
+* min, 25%, 50%, 75%, max
+min, max は最小値, 最大値  
+25%, 50%, 75% は25%番目, 50%番目(中央値), 75%番目の値
+
+## 要約した値の可視化(箱ひげ図)
+```python
+data.col.boxplot()
+```
+
+## pandasの配列をnumpyの配列に変換する
+```python
+npdata = np.array(data.col)
+```
