@@ -10,6 +10,16 @@ import pandas as pd
 data = pd.read_csv('file name')
 ```
 
+## csv の読込(型を指定)
+```python
+data = pd.read_csv('file name',
+  dtype= {
+    'A': 'str',
+    'B': 'str',
+    'C': 'float'
+  })
+```
+
 ## csv の出力
 ```python
 data.to_csv('file name')
